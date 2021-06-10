@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('homepage');
+
+Route::prefix('json')->name('json.')->group(function(){
+    Route::get('index', 'JsonController@index')->name('index');
+    Route::get('complex', 'JsonController@complex')->name('complex');
+    Route::get('more-complex', 'JsonController@moreComplex')->name('morecomplex');
+});

@@ -28,10 +28,11 @@
                             <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="f#">FAQ</a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="#">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="#">Blog Post</a></li>
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownJson" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Json</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownJson">
+                                    <li><a class="dropdown-item" href="{{ route('json.index')}}">Json Example 1</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('json.complex')}}">Complex Json Example</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('json.morecomplex')}}">More Complex Json</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
