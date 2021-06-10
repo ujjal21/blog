@@ -21,4 +21,5 @@ Route::prefix('json')->name('json.')->group(function(){
     Route::get('index', 'JsonController@index')->name('index');
     Route::get('complex', 'JsonController@complex')->name('complex');
     Route::get('more-complex', 'JsonController@moreComplex')->name('morecomplex');
+    Route::get('array-example', 'JsonController@arrayExample')->name('array_example');
 });

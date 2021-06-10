@@ -26,13 +26,16 @@
                             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="f#">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownJson" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Json</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownJson">
-                                    <li><a class="dropdown-item" href="{{ route('json.index')}}">Json Example 1</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('json.index')}}" title="Simple Json Example">Json Example 1</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="{{ route('json.complex')}}">Complex Json Example</a></li>
                                     <li><a class="dropdown-item" href="{{ route('json.morecomplex')}}">More Complex Json</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('json.array_example')}}" title="Json Array Example">Array Example</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
