@@ -12,6 +12,7 @@
         <link href="{{ asset('vendor/bootstrap-5.0.1/css/bootstrap-icons.css') }}" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{asset('vendor/bootstrap-5.0.1/css/bootstrap.min.css')}}" rel="stylesheet" />
+        @yield('stylesheet')
     </head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
@@ -33,9 +34,18 @@
                                     <li>
                                         <a class="dropdown-item" href="{{ route('json.index')}}" title="Simple Json Example">Json Example 1</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="{{ route('json.complex')}}">Complex Json Example</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('json.morecomplex')}}">More Complex Json</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('json.array_example')}}" title="Json Array Example">Array Example</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('json.complex')}}">Complex Json Example</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('json.morecomplex')}}">More Complex Json</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('json.array_example')}}" title="Json Array Example">Array Example</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('json.ajax_example')}}" title="Ajax Example">Ajax Example</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">

@@ -25,4 +25,9 @@ class JsonController extends Controller
     {
         return view('json.array_example');
     }
+
+    public function ajaxExample()
+    {
+        return view('json.ajax_example');
+    }
 }
